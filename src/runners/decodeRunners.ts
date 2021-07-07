@@ -1,10 +1,10 @@
 import { add } from "benny";
-import { ITestable } from "../types/ITestable";
+import { IHasheable } from "../types/IHasheable";
 import { SuiteObject } from "../types/SuiteObject";
 
 export function decodeRunner(
   hashes: Array<string>,
-  libraries: Array<ITestable>
+  libraries: Array<IHasheable>
 ): Promise<SuiteObject>[] {
   const runs: Promise<SuiteObject>[] = [];
   for (const library of libraries) {

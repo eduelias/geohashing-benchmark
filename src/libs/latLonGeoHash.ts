@@ -1,8 +1,8 @@
 import Geohash from "latlon-geohash";
 import { ILatLong } from "../types/ILatLong";
-import { ITestable } from "../types/ITestable";
+import { IHasheable } from "../types/IHasheable";
 
-export class LatLongGeoHash implements ITestable {
+export class LatLongGeoHash implements IHasheable {
   public name: string = "latlong-geohash";
   public decode: (hash: string) => ILatLong = (hash: string) => {
     const { lat, lon } = Geohash.decode(hash);
