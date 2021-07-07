@@ -10,7 +10,7 @@ export function encodeRunner(
   const runs: Promise<SuiteObject>[] = [];
   for (const library of libraries) {
     runs.push(
-      add(`${library.name} encoding`, () => {
+      add(`${library.name}`, () => {
         for (const coord of coordinates) {
           library.encode(coord);
         }

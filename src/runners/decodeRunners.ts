@@ -9,7 +9,7 @@ export function decodeRunner(
   const runs: Promise<SuiteObject>[] = [];
   for (const library of libraries) {
     runs.push(
-      add(`${library.name} decoding`, () => {
+      add(`${library.name}`, () => {
         for (const hash of hashes) {
           library.decode(hash);
         }
