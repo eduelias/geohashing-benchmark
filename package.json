@@ -1,0 +1,23 @@
+{
+  "name": "geohash-benchmark",
+  "version": "0.9.0",
+  "description": "Geohashing benchmark project",
+  "main": "build/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eduelias/geohashing-benchmark.git"
+  },
+  "keywords": [
+    "geohashing",
+    "benchmark"
+  ],
+  "author": "Eduardo Elias Saleh",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/eduelias/geohashing-benchmark/issues"
+  },
+  "homepage": "https://github.com/eduelias/geohashing-benchmark#readme"
+}
