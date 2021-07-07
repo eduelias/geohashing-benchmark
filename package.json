@@ -28,7 +28,7 @@
     "benny": "^3.6.15",
     "esm": "^3.2.25",
     "esm-ts-node": "^1.0.7",
-    "geohash": "0.0.1",
+    "geohash": "^0.0.1",
     "latlon-geohash": "^2.0.0",
     "ngeohash": "^0.6.3"
   },
