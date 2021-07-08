@@ -8,6 +8,6 @@ export class LatLongGeoHash implements IHasheable {
     const { lat, lon } = Geohash.decode(hash);
     return { latitude: lat, longitude: lon };
   };
-  public encode: (latLong: ILatLong) => string = ({ latitude, longitude }) =>
-    Geohash.encode(latitude, longitude);
+  public encode: (latLong: ILatLong, precision?: any) => string = ({ latitude, longitude }, precision) =>
+    Geohash.encode(latitude, longitude, precision);
 }

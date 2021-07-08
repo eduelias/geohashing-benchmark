@@ -3,7 +3,7 @@ import { decodeSuite } from "./suites/decoding";
 
 const run = async () => {
   await encodeSuite;
-  await decodeSuite;
+  // await decodeSuite;
 };
 
 run();

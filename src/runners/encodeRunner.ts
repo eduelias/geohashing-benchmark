@@ -12,7 +12,7 @@ export function encodeRunner(
     runs.push(
       add(`${library.name}`, () => {
         for (const coord of coordinates) {
-          library.encode(coord);
+          library.encode(coord, 4);
         }
       })
     );

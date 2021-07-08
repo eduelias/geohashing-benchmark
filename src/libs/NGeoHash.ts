@@ -5,6 +5,6 @@ import { IHasheable } from "../types/IHasheable";
 export class NGeohash implements IHasheable {
   public name: string = "ngeohash";
   public decode: (hash: string) => ILatLong = gh.decode;
-  public encode: (latLong: ILatLong) => string = ({ latitude, longitude }) =>
-    gh.encode(latitude, longitude);
+  public encode: (latLong: ILatLong, precision?: any) => string = ({ latitude, longitude }, precision) =>
+    gh.encode(latitude, longitude, precision);
 }
